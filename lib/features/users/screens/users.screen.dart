@@ -33,26 +33,20 @@ class _UsersScreenState extends State<UsersScreen> {
               body: Center(child: CircularProgressIndicator()),
             );
           }
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text("Users"),
-              actions: [
-                IconButton(
-                  onPressed: () => Provider.of<AuthProvider>(
-                    context,
-                    listen: false,
-                  ).logout(),
-                  icon: const Icon(Icons.logout),
+          return ListView.builder(
+            itemCount: usersProvider.users.length,
+            itemBuilder: (context, index) {
+              final user = usersProvider.users[index];
+              return Card(
+                elevation: 2,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
                 ),
-              ],
-            ),
-            body: ListView.builder(
-              itemCount: usersProvider.users.length,
-              itemBuilder: (context, index) {
-                final user = usersProvider.users[index];
-                return ListTile(title: Text("${user.id} - ${user.name} - ${user.lastName}"));
-              },
-            ),
+                child: ListTile(
+                  title: Text("${user.id} - ${user.name} - ${user.lastName}"),
+                ),
+              );
+            },
           );
         },
       ),
