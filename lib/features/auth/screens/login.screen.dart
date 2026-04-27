@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter_app_base/core/errors/app_error.dart';
-import 'package:flutter_app_base/features/auth/providers/auth_provider.dart';
+import 'package:flutter_app_base/core/errors/app.error.dart';
+import 'package:flutter_app_base/features/auth/providers/auth.provider.dart';
 import 'package:provider/provider.dart';
 
 class LoginScreen extends StatefulWidget {

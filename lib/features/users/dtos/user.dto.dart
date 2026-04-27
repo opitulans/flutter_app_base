@@ -1,4 +1,4 @@
-import 'package:flutter_app_base/features/users/models/user_model.dart';
+import 'package:flutter_app_base/features/users/models/user.model.dart';
 
 class UserDTO {
   final int id;

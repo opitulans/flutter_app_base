@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:flutter_app_base/core/errors/app_error.dart';
-import 'package:flutter_app_base/core/stores/auth_store.dart';
+import 'package:flutter_app_base/core/errors/app.error.dart';
+import 'package:flutter_app_base/core/stores/auth.store.dart';
 import 'package:http/http.dart' as http;
 
 class ApiCase {

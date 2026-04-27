@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_base/core/errors/app_error.dart';
-import 'package:flutter_app_base/core/stores/auth_store.dart';
-import 'package:flutter_app_base/features/auth/services/auth_service.dart';
+import 'package:flutter_app_base/core/errors/app.error.dart';
+import 'package:flutter_app_base/core/stores/auth.store.dart';
+import 'package:flutter_app_base/features/auth/services/auth.service.dart';
 
 class AuthProvider extends ChangeNotifier {
   final _storage = AuthStore();

@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter_app_base/core/errors/app_error.dart';
-import 'package:flutter_app_base/features/users/models/user_model.dart';
-import 'package:flutter_app_base/features/users/services/users_service.dart';
+import 'package:flutter_app_base/core/errors/app.error.dart';
+import 'package:flutter_app_base/features/users/models/user.model.dart';
+import 'package:flutter_app_base/features/users/services/users.service.dart';
 
 class UsersProvider extends ChangeNotifier {
   final UsersService _service = UsersService();

@@ -1,8 +1,8 @@
-import 'package:flutter_app_base/core/contracts/crud_contract.dart';
-import 'package:flutter_app_base/core/errors/app_error.dart';
-import 'package:flutter_app_base/core/use-cases/api_case.dart';
-import 'package:flutter_app_base/features/users/dtos/user_dto.dart';
-import 'package:flutter_app_base/features/users/models/user_model.dart';
+import 'package:flutter_app_base/core/contracts/crud.contract.dart';
+import 'package:flutter_app_base/core/errors/app.error.dart';
+import 'package:flutter_app_base/core/use-cases/api.case.dart';
+import 'package:flutter_app_base/features/users/dtos/user.dto.dart';
+import 'package:flutter_app_base/features/users/models/user.model.dart';
 
 class UsersService extends ApiCase {
   Future<Result<ListResponse<UserModel>>> list(
